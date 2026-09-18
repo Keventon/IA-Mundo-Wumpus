@@ -229,6 +229,76 @@ Alguns pontos precisam ser considerados na análise e na defesa do trabalho:
 
 As regras, a memória, a estratégia, a codificação e o fitness são escolhas propostas nesta implementação, dentro da liberdade concedida pelo enunciado. Devem ser compreendidas, revisadas e justificadas na apresentação acadêmica.
 
+## Como executar no Visual Studio Code
+
+Também é possível executar os projetos no Visual Studio Code pelo terminal integrado, sem utilizar o NetBeans.
+
+### Pré-requisitos
+
+- JDK 8 ou superior instalado.
+- Apache Ant instalado.
+- Comandos `java`, `javac` e `ant` disponíveis no terminal.
+
+Para verificar:
+
+```bash
+java -version
+javac -version
+ant -version
+```
+
+### Execução
+
+1. Baixe ou clone o repositório.
+2. No VS Code, selecione **Arquivo > Abrir Pasta** e abra a raiz do repositório.
+3. Abra **Terminal > Novo Terminal**.
+4. Entre na pasta da etapa desejada. Exemplo:
+
+```bash
+cd PD_Etapa1_Gerador
+```
+
+5. Compile e execute:
+
+```bash
+ant clean jar
+ant run
+```
+
+A saída aparecerá no terminal integrado. Para executar outra etapa, entre na pasta correspondente e repita os comandos.
+
+### Executar a Etapa 5
+
+Na pasta `PD_Etapa5_Validacao`, execute a bateria completa salvando os resultados em uma nova pasta:
+
+```bash
+ant -Dapplication.args="--saida=resultados_novos" run
+```
+
+Para uma execução rápida:
+
+```bash
+ant -Dapplication.args="--rapido --saida=resultados_rapidos" run
+```
+
+**O modo rápido não substitui o protocolo final exigido pelo PD.**
+
+### Testes e conferência
+
+Na pasta de qualquer etapa, execute os testes automáticos:
+
+```bash
+ant test
+```
+
+Na Etapa 5, confira os resultados originais incluídos:
+
+```bash
+ant conferir
+```
+
+Não é necessário configurar bibliotecas externas. A compilação e a execução utilizam o `build.xml` de cada projeto.
+
 ## Documentação e referência
 
 - [REQUISITOS.md](docs/REQUISITOS.md): correspondência entre exigências do PDF e implementação.
