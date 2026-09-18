@@ -1,0 +1,62 @@
+PD ETAPA 2 - AGENTE v1 SEM MEMÓRIA
+Objetos: P=poço, W=Wumpus, O=ouro, .=vazio; início=[0][0]
+         0    1    2    3    4
+   0     .    .    .    .    .
+   1     W    .    .    P    .
+   2     .    .    .    .    .
+   3     .    .    O    P    .
+   4     .    .    .    .    .
+Percepções: b=brisa, f=fedor, B=brilho (vizinhança sem diagonais)
+   0     f    .    .    b    .
+   1     .    f    b    .    b
+   2     f    .    .    b    .
+   3     .    .   bB    .    b
+   4     .    .    .    b    .
+1 | [0][0] brisa=false fedor=true brilho=false impacto=false grito=false -> ATIRAR_SUL | pontos=999
+2 | [0][0] brisa=false fedor=false brilho=false impacto=false grito=true -> NORTE | pontos=998
+3 | [0][0] brisa=false fedor=false brilho=false impacto=true grito=false -> LESTE | pontos=997
+4 | [0][1] brisa=false fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=996
+5 | [0][1] brisa=false fedor=false brilho=false impacto=true grito=false -> SUL | pontos=995
+6 | [1][1] brisa=false fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=994
+7 | [1][0] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=993
+8 | [2][0] brisa=false fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=992
+9 | [2][1] brisa=false fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=991
+10 | [2][2] brisa=false fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=990
+11 | [1][2] brisa=true fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=989
+12 | [1][1] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=988
+13 | [2][1] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=987
+14 | [3][1] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=986
+15 | [4][1] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=985
+16 | [4][1] brisa=false fedor=false brilho=false impacto=true grito=false -> LESTE | pontos=984
+17 | [4][2] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=983
+18 | [4][2] brisa=false fedor=false brilho=false impacto=true grito=false -> OESTE | pontos=982
+19 | [4][1] brisa=false fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=981
+20 | [4][0] brisa=false fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=980
+21 | [4][0] brisa=false fedor=false brilho=false impacto=true grito=false -> OESTE | pontos=979
+22 | [4][0] brisa=false fedor=false brilho=false impacto=true grito=false -> NORTE | pontos=978
+23 | [3][0] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=977
+24 | [4][0] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=976
+25 | [4][0] brisa=false fedor=false brilho=false impacto=true grito=false -> LESTE | pontos=975
+26 | [4][1] brisa=false fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=974
+27 | [4][0] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=973
+28 | [4][0] brisa=false fedor=false brilho=false impacto=true grito=false -> OESTE | pontos=972
+29 | [4][0] brisa=false fedor=false brilho=false impacto=true grito=false -> NORTE | pontos=971
+30 | [3][0] brisa=false fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=970
+31 | [2][0] brisa=false fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=969
+32 | [2][1] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=968
+33 | [3][1] brisa=false fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=967
+34 | [2][1] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=966
+35 | [3][1] brisa=false fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=965
+36 | [3][0] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=964
+37 | [4][0] brisa=false fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=963
+38 | [3][0] brisa=false fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=962
+39 | [2][0] brisa=false fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=961
+40 | [2][1] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=960
+41 | [3][1] brisa=false fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=959
+42 | [3][0] brisa=false fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=958
+43 | [3][1] brisa=false fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=957
+44 | [3][2] brisa=true fedor=false brilho=true impacto=false grito=false -> PEGAR | pontos=1956
+45 | [3][2] brisa=true fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=1955
+46 | [2][2] brisa=false fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=1954
+47 | [2][3] brisa=true fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=953
+fim=POCO ações=47 pontos=953 ouro=1 Wumpus mortos=1 casas=16

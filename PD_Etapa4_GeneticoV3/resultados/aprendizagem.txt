@@ -1,0 +1,4 @@
+População=50; gerações=1000; cruzamento=85%; mutação por gene=5%; fitness=3
+Semente treino=42; teste=1042
+Genes=[2, 2, 0, 6, 5, 4]; fitness treino=7087.0; avaliações=17775
+fim=VITORIA ações=15 pontos=1985 ouro=1 Wumpus mortos=1 casas=7

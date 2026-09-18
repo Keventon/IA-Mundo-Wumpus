@@ -1,0 +1,7 @@
+package pdwumpus;
+public final class Testes {
+  public static void main(String[] args) {
+    TestesAmbiente.testar();
+    System.out.println("TODOS OS TESTES PASSARAM.");
+  }
+}

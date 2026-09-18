@@ -1,0 +1,2 @@
+OK: 450 replays idênticos; 15 combinações x 30 partidas; pontuação e vitória corretas.
+OK: fitness final reproduzido; 150 treinamentos com 1001 populações; elitismo e gráficos válidos.

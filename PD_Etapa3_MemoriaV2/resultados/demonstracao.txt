@@ -1,0 +1,45 @@
+PD ETAPA 3 - AGENTE v2 COM MEMÓRIA E PLANEJAMENTO
+Objetos: P=poço, W=Wumpus, O=ouro, .=vazio; início=[0][0]
+         0    1    2    3    4
+   0     .    .    .    .    .
+   1     W    .    .    P    .
+   2     .    .    .    .    .
+   3     .    .    O    P    .
+   4     .    .    .    .    .
+Percepções: b=brisa, f=fedor, B=brilho (vizinhança sem diagonais)
+   0     f    .    .    b    .
+   1     .    f    b    .    b
+   2     f    .    .    b    .
+   3     .    .   bB    .    b
+   4     .    .    .    b    .
+1 | [0][0] brisa=false fedor=true brilho=false impacto=false grito=false -> LESTE | pontos=-1
+2 | [0][1] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=-2
+3 | [1][1] brisa=false fedor=true brilho=false impacto=false grito=false -> NORTE | pontos=-3
+4 | [0][1] brisa=false fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=-4
+5 | [0][2] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=-5
+6 | [1][2] brisa=true fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=-6
+7 | [0][2] brisa=false fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=-7
+8 | [0][3] brisa=true fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=-8
+9 | [0][4] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=-9
+10 | [1][4] brisa=true fedor=false brilho=false impacto=false grito=false -> SUL | pontos=-10
+11 | [2][4] brisa=false fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=-11
+12 | [2][3] brisa=true fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=-12
+13 | [2][4] brisa=false fedor=false brilho=false impacto=false grito=false -> SUL | pontos=-13
+14 | [3][4] brisa=true fedor=false brilho=false impacto=false grito=false -> SUL | pontos=-14
+15 | [4][4] brisa=false fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=-15
+16 | [4][3] brisa=true fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=-16
+17 | [4][2] brisa=false fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=-17
+18 | [3][2] brisa=true fedor=false brilho=true impacto=false grito=false -> PEGAR | pontos=982
+19 | [3][2] brisa=true fedor=false brilho=false impacto=false grito=false -> SUL | pontos=981
+20 | [4][2] brisa=false fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=980
+21 | [4][3] brisa=true fedor=false brilho=false impacto=false grito=false -> LESTE | pontos=979
+22 | [4][4] brisa=false fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=978
+23 | [3][4] brisa=true fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=977
+24 | [2][4] brisa=false fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=976
+25 | [1][4] brisa=true fedor=false brilho=false impacto=false grito=false -> NORTE | pontos=975
+26 | [0][4] brisa=false fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=974
+27 | [0][3] brisa=true fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=973
+28 | [0][2] brisa=false fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=972
+29 | [0][1] brisa=false fedor=false brilho=false impacto=false grito=false -> OESTE | pontos=971
+30 | [0][0] brisa=false fedor=true brilho=false impacto=false grito=false -> SAIR | pontos=970
+fim=VITORIA ações=30 pontos=970 ouro=1 Wumpus mortos=0 casas=15

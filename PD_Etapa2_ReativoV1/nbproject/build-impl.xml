@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="PD_Etapa2_ReativoV1-impl" default="jar" basedir="..">
+  <property file="nbproject/private/private.properties"/>
+  <property file="nbproject/project.properties"/>
+  <target name="compile">
+    <mkdir dir="${build.classes.dir}"/>
+    <javac srcdir="${src.dir}" destdir="${build.classes.dir}" source="${javac.source}"
+      target="${javac.target}" encoding="${source.encoding}" includeantruntime="false"/>
+  </target>
+  <target name="jar" depends="compile">
+    <mkdir dir="${dist.dir}"/>
+    <jar destfile="${dist.jar}" basedir="${build.classes.dir}">
+      <manifest><attribute name="Main-Class" value="${main.class}"/></manifest>
+    </jar>
+  </target>
+  <target name="run" depends="compile">
+    <java classname="${main.class}" fork="true" failonerror="true" dir="${basedir}">
+      <classpath path="${build.classes.dir}"/><jvmarg line="${run.jvmargs}"/>
+      <arg line="${application.args}"/>
+    </java>
+  </target>
+  <target name="test" depends="compile">
+    <java classname="pdwumpus.Testes" fork="true" failonerror="true">
+      <classpath path="${build.classes.dir}"/>
+    </java>
+  </target>
+  <target name="clean"><delete dir="${build.dir}"/><delete dir="${dist.dir}"/></target>
+</project>
