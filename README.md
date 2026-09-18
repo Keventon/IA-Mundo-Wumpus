@@ -4,7 +4,7 @@ Projeto acadêmico desenvolvido para a disciplina de **Inteligência Artificial 
 
 O objetivo é implementar e comparar três versões de um agente no Mundo de Wumpus: um agente reativo sem memória, um agente com memória e planejamento e um agente de aprendizagem por algoritmo genético. A evolução é registrada em projetos independentes, permitindo acompanhar o código, as decisões e os resultados de cada etapa.
 
-Este repositório corresponde ao PD de Inteligência Artificial, não às versões didáticas utilizadas na disciplina de Computação Gráfica.
+Desenvolvedores: Keventon Guimarães, Miguel Ângelo e Edinaldo Henriques.
 
 ## Tecnologias
 
